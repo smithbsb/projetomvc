@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="public"/>
+	<buildpathentry kind="src" path="whiteList/backEnd/control/facade"/>
+	<buildpathentry kind="src" path="whiteList/backEnd/model/dao"/>
+	<buildpathentry kind="src" path="whiteList/backEnd/to"/>
+	<buildpathentry kind="src" path="whiteList/backEnd/util"/>
+	<buildpathentry kind="src" path="whiteList/frontEnd/_inc"/>
+	<buildpathentry kind="src" path="whiteList/frontEnd/index"/>
+	<buildpathentry kind="src" path="whiteList/frontEnd/main"/>
+	<buildpathentry kind="src" path="whiteList/frontEnd/user"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+</buildpath>
