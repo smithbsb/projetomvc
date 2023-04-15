@@ -10,7 +10,7 @@ final class MysqlUtil {
 	
     public function getConnection() {
         if ($_SERVER['SERVER_NAME'] == 'localhost') {
-            $this->connection = mysqli_connect          ('localhost', 'root', '2wsteryu');
+            $this->connection = mysqli_connect          ('localhost', 'root', 'Cacau123@#');
             mysqli_select_db                            ($this->connection, 'projetomvc');
         } else {
             //$this->connection = mysqli_connect          ('smithsoftwares.com', 'smiths62_smith1', 'Smith123@#');

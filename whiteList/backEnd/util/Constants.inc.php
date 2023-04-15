@@ -1,6 +1,5 @@
 <?php
-$proj = 'projetomvc';
-$path_jail = $_SERVER['DOCUMENT_ROOT'].'/../'.$proj.'-jail';
+$path_jail = $_SERVER['DOCUMENT_ROOT'].'/../whiteList';
 
 
 // BackEnd - Control Layer

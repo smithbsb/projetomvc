@@ -5,7 +5,7 @@ if ($_SERVER['HTTP_HOST'] != 'localhost') {
 
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
-require_once($_SERVER['DOCUMENT_ROOT']  . '/../projetomvc-jail/backEnd/util/Constants.inc.php');
+require_once($_SERVER['DOCUMENT_ROOT']  . '/../whiteList/backEnd/util/Constants.inc.php');
 require_once(UTIL                       . '/SecurityUtil.php');
 
 $secUtil = new SecurityUtil();
