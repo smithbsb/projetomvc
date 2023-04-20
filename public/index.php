@@ -1,4 +1,5 @@
 <?php
+
 if ($_SERVER['HTTP_HOST'] != 'localhost') {
     if(!$_SERVER['HTTPS']) { header("Location: https://".$_SERVER['SERVER_NAME']); }
 }
