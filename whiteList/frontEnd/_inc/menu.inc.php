@@ -10,6 +10,11 @@ echo "</tr>";
     echo "&nbsp;<a style='text-decoration:none;' href='#' id='lk_users'><font size='2' color='#000000'>Manter Usu&aacute;rios</font></a>";
     echo "</td></tr>";
     
+    echo "<tr><td onmouseover=\"this.style.backgroundColor='#c0c0c0';\" onmouseout=\"this.style.backgroundColor='#ffffff';\" align='left' valign='middle'>";
+    echo "&nbsp;<a style='text-decoration:none;' href='#' id='lk_produtos'><font size='2' color='#000000'>Manter Produtos</font></a>";
+    echo "</td></tr>";
+    
+    
     
 echo "</table>";
 echo '<br>';
@@ -30,6 +35,19 @@ $('#lk_users').click(function() {
 	$("#loading").append("<center><img src='/img/loading.gif' width='50'></center>");
 	$.ajax({
     	type: 'POST', url: '/', data: { u: 'UserFacade/readUsers', d: '' }, 
+        success: function(rs) {
+        	$("#mbody").empty();
+        	$("#mbody").append(rs);
+        	$("#loading").empty();
+        }, 
+        error: function() { alert('Erro inexperado!'); } 
+	});
+    return false;
+});
+$('#lk_produtos').click(function() {
+	$("#loading").append("<center><img src='/img/loading.gif' width='50'></center>");
+	$.ajax({
+    	type: 'POST', url: '/', data: { u: 'ProdutoFacade/readProdutos', d: '' }, 
         success: function(rs) {
         	$("#mbody").empty();
         	$("#mbody").append(rs);

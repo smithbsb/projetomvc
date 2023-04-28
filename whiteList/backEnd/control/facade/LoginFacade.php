@@ -13,6 +13,7 @@ function login ($d, $msg_ret, $data_ret) {
     $userBO     = new backEnd\control\facade\bo\UserBO();
     
     $dados      = explode('@@@', $d);
+    
     $mail       = $dados[0];
     $pass       = $dados[1];
     
